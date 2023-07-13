@@ -1,6 +1,7 @@
 import random
 
-s = [chr(ord("a") + i) for i in range(26)]
-if s == "r":
-    print("owari")
-    break
+while True:
+    s = random.choice([chr(ord("a") + i) for i in range(26)])
+    print(s)
+    if "r" in s or "t" in s:
+        break
